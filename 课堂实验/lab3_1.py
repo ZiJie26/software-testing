@@ -1,0 +1,23 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from time import sleep
+driver=webdriver.Firefox()
+driver.implicitly_wait(3)
+driver.get('http://localhost/upload/index.php')
+driver.find_element(By.XPATH, '//*[@id="ECS_MEMBERZONE"]/a[1]').click()
+sleep(3)
+driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/a').click()
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="show_best_area"]/div[1]/p/a').click()
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="searchForm"]/a').click()
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="keywords"]').send_keys('100')
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="advancedSearchForm"]/table/tbody/tr[7]/td/input[2]').click()
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="compareForm"]/div/div/div[5]/a[1]').click()
+sleep(3)
+driver.find_element(By.XPATH, '//*[@id="topNav"]/a[1]').click()
+sleep(3)
+driver.quit()
