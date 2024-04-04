@@ -1,4 +1,4 @@
-该项目为软件测试课程的大作业，基于Python、selenium以及被测网站ECShop完成。
+该项目为软件测试课程的综合测试项目，基于Python、selenium以及被测网站ECShop完成。
 
 
 * 实验功能： 
